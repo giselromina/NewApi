@@ -6,7 +6,7 @@ const bookRouter = express.Router();
 
 const port = process.env.PORT || 3000;
 
-bookRouter.route('/books').get((req,res)=>{
+bookRouter.route('/Books').get((req,res)=>{
     const response = {hello: 'This is my API'}
     res.json(response);
 
