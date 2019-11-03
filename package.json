@@ -1,43 +1,41 @@
 {
-    "name": "api",
-    "version": "1.0.0",
-    "description": "New Api using Nodejs",
-    "main": "index.js",
-    "scripts": {
-        "lint": "eslint .",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon app.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/giselromina/NewApi.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/giselromina/NewApi/issues"
-    },
-    "homepage": "https://github.com/giselromina/NewApi#readme",
-    "dependencies": {
-        "express": "^4.17.1"
-    },
-    "devDependencies": {
-        "eslint": "^6.6.0",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-plugin-import": "^2.18.2",
-        "nodemon": "^1.19.4"
-    },
-    "nodemonConfig": {
-        "restartable": "rs",
-        "ignore": [
-            "node_modules/**/nnode_modules"
-        ],
-        "delay": "2500",
-        "env": {
-            "NODE_ENV": "development",
-            "PORT": 4000
-        }
-
+  "name": "api",
+  "version": "1.0.0",
+  "description": "New Api using Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giselromina/NewApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giselromina/NewApi/issues"
+  },
+  "homepage": "https://github.com/giselromina/NewApi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.4"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/nnode_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
     }
-
+  }
 }
