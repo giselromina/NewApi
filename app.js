@@ -1,5 +1,5 @@
-const express = require ('express');
-const mongoose = require ('mongoose');
+const express = require('express');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -8,7 +8,7 @@ const db = mongoose.connect('mongodb://localhost/bookApi');
 const Book = require('./models/bookModel');
 const port = process.env.PORT || 3010;
 const bookRouter = require('./routes/bookRouter')(Book);
-app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
