@@ -8,7 +8,7 @@ if(process.env.ENV === 'Test'){
   const db = mongoose.connect('mongodb://localhost/bookApi_Test');
 }else{
   console.log('This is for real');
-  const db = mongoose.connect('mongodb://localhost/bookApi-prod');
+  const db = mongoose.connect('mongodb://localhost/bookApi');
 }
 //const db = mongoose.connect('mongodb://localhost/bookApi');
 
@@ -27,8 +27,7 @@ app.use('/api', bookRouter);
 app.get('/', (req, res) => {
   res.send('Welcome to my Nodemon API!');
 });
-
-app.server = app.listen(port, () => {
+app.listen(port, () => {
   console.log(`Running on port ${port}`);
 });
 

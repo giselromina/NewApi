@@ -1,4 +1,4 @@
-db.books.insert(
+db.books.insert([
 {
 	title: 'War and Peace',
 	genre: 'Historical Fiction',
@@ -46,5 +46,5 @@ db.books.insert(
 	genre: 'Biography',
 	author: 'Lev Nikolayevich Tolstoy',
 	read: false
-}
+}]
 )
